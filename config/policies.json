@@ -70,7 +70,8 @@
           "timeWindowMinutes": 1,
           "mode": "strict",
           "identifier": {
-            "export": "$import(./modules/rate_dinamico)"
+            "export": "dynamicRateLimit",
+            "module": "./modules/rate_dinamico"
           }
         }
       },
