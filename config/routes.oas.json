@@ -68,7 +68,8 @@
           "policies": {
             "inbound": [
               "api-key-inbound-1",
-              "rate-limit-dinamico"
+              "rate-limit-dinamico",
+              "quota-inbound"
             ]
           }
         },
