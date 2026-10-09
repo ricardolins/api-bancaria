@@ -80,19 +80,15 @@
     },
     {
       "handler": {
-        "name": "my-quota-inbound-policy",
-        "policyType": "quota-inbound",
-        "handler": {
-          "export": "QuotaInboundPolicy",
-          "module": "$import(@zuplo/runtime)",
-          "options": {
-            "period": "daily",
-            "quotaBy": "user",
-            "allowances": {
-              "requests": 5
-            },
-            "quotaOnStatusCodes": "200-299"
-          }
+        "export": "QuotaInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "period": "daily",
+          "quotaBy": "user",
+          "allowances": {
+            "requests": 5
+          },
+          "quotaOnStatusCodes": "200-299"
         }
       },
       "name": "quota-inbound",
